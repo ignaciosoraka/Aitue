@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+@font-face {
+	font-family: Sansation_Regular;
+	src: url(Sansation_Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: Sansation_Regular;
+
+    margin: 0;
+    background-color: rgb(194, 194, 194);
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+/* Estilos del botón de WhatsApp */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+
+}
+
+.whatsapp-button a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+.whatsapp-button img {
+    width: 55px;
+    /* Tamaño del icono de WhatsApp */
+    height: 55px;
+
+}
+
+.whatsapp {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #25D366;
+    /* Color verde de WhatsApp */
+    color: #FFFFFF;
+    /* Texto blanco */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+
+.whatsapp:hover {
+    background-color: #1f8944cf;
+    /* Cambia el color de fondo al pasar el mouse */
+}
+
+.cta {
+    display: inline-block;
+    background-color: #ffffff;
+    justify-self: center;
+    color: #001A49;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 8px;
+}
+
+.cta:hover {
+    background-color: #3498db; /* Cambia el color de fondo al pasar el ratón */
+  color: #fff; 
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+	background-image: linear-gradient(180deg,
+	rgba(1, 56, 118, 0) 0%, /* Color azul más oscuro */
+	rgba(1, 56, 118, 1) 100% /* Color azul transparente */), url('../images/satelite.jpg');
+    background-size: cover;
+    
+    z-index: -1;
+}
+
+
+/* Nav */
+.logo {
+    height: 8rem;
+	padding: 20px;
+	padding-top: 40px;
+}
+
+
+.nav {
+    --padding-container: 0;
+    
+    display: flex;
+    align-items: center;
+	
+	
+}
+
+nav.nav {
+	width: 100%;
+    max-width: none;
+    /*background-color: #013876; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav__title {
+    font-weight: 300;
+	margin-left: 40px;
+}
+
+.nav__link {
+	margin-right: 50px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+nav.nav .nav__logo {
+    margin-right: 20px; /* Ajusta según sea necesario */
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+
+.nav__close {
+    display: var(--show, none);
+}
+
+
+/* Hero container */
+
+.hero__container {
+    max-width: 1200px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    
+    padding-bottom: 150px;
+    text-align:initial;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+
+
+
+.hero__paragraph {
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width:800px) {
+    .nav__menu {
+        display: block;
+    }
+
+	.logo {
+		height: 6rem;
+		padding: 20px;
+		padding-top: 40px;
+	}
+
+    .nav__link--menu {
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+        margin: 0;
+    }
+
+    .nav__link--show {
+        --show: block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:600px){
+    .hero__title{
+        font-size: 2rem;
+    }
+	.logo {
+		height: 5rem;
+		padding: 10px;
+		padding-top: 40px;
+	}
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+        width: 100%;
+        height: 80%;
+        background-image:linear-gradient(180deg,
+		rgba(1, 56, 118, 0) 0%, /* Color azul más oscuro */
+		rgba(1, 56, 118, 1) 100% /* Color azul transparente */), url('../images/satelite.jpg');
+        background-position: center center; /* Centra la imagen en dispositivos móviles */
+        background-size: cover;
+        
+        z-index: -1;
+    }
+
+
+	.hero__container {
+		max-width: 1200px;
+		--padding-container: 0;
+		display: grid;
+		grid-auto-rows: max-content;
+		align-content: center;
+		
+		padding-bottom: 200px;
+		text-align:center;
+	}
+
+
+    .hero__paragraph{
+        font-size: 1rem;
+    }
+}
