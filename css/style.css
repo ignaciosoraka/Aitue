@@ -117,11 +117,11 @@ body {
     width: 100%;
     height: 80%;
     background-image: linear-gradient(180deg,
-            rgba(1, 56, 118, 0) 0%,
+            rgba(7, 7, 7, 0) 0%,
             /* Color azul más oscuro */
             rgba(1, 56, 118, 1) 100%
             /* Color azul transparente */
-        ), url('../images/satelite.jpg');
+        ), url('../images/header.jpg');
     background-size: cover;
 
     z-index: -1;
@@ -230,11 +230,20 @@ nav.nav .nav__logo {
 
 .about {
     text-align: center;
-    margin-top: -100px;
+    margin-top: -130px;
+    margin-bottom: 100px;
 }
 
+#soluciones {
+    background: url('../images/Landing_Web_aitue-2_trama.png') repeat; /* Reemplaza 'ruta/de/la/trama.jpg' con la ruta correcta de tu imagen de trama */
+     background-attachment: fixed;
+    background-size: cover;
+    padding: 60px 0; /* Ajusta el espaciado según sea necesario */
+}
+
+
 .subtitle {
-    color:rgb(0, 63, 118); 
+    color: rgb(0, 63, 118);
 
     margin-bottom: -27px;
 }
@@ -267,7 +276,8 @@ nav.nav .nav__logo {
 .about__icon {
     width: 100px;
 }
-.about__title{
+
+.about__title {
     color: rgb(0, 63, 118);
 }
 
@@ -281,12 +291,22 @@ nav.nav .nav__logo {
     height: 500px;
     /* Puedes ajustar la altura según tus necesidades */
     overflow: hidden;
+    margin-top: -120px;
+    
+
+
 }
 
 .section-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: linear-gradient(180deg,
+            rgba(1, 56, 118, 1) 100%,
+            /* Color azul más oscuro */
+            rgba(1, 56, 118, 0) 0%
+            /* Color azul transparente */
+        );
 }
 
 .section-overlay {
@@ -303,7 +323,7 @@ nav.nav .nav__logo {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding:30px 50px 30px 60px;
+    padding: 30px 50px 30px 60px;
     width: 100%;
     /* Aumenté el tamaño del div en sí */
     max-width: 650px;
@@ -320,21 +340,22 @@ nav.nav .nav__logo {
 .feature img {
     width: 150px;
     /* Ajusta el tamaño del logo según tus necesidades */
-    
+
 }
 
 .resaltado {
     font-weight: bold;
-    font-size: 1.5em; /* Puedes ajustar el tamaño según tus preferencias */
-     /* Puedes ajustar el color según tus preferencias */
-  }
+    font-size: 1.5em;
+    /* Puedes ajustar el tamaño según tus preferencias */
+    /* Puedes ajustar el color según tus preferencias */
+}
 
 @media (max-width:1100px) {
 
-.section-overlay {
-    
-    max-width:650px;
-}
+    .section-overlay {
+
+        max-width: 650px;
+    }
 }
 
 @media (max-width:800px) {
@@ -380,14 +401,17 @@ nav.nav .nav__logo {
         cursor: pointer;
     }
 
-    .subtitle { 
-font-size: 20px;
+    .subtitle {
+        font-size: 20px;
     }
+
+    
+
     .about__main {
         gap: 2em;
     }
 
-    .resaltado{
+    .resaltado {
         font-size: 1.2em;
     }
 
@@ -404,6 +428,10 @@ font-size: 20px;
 }
 
 @media (max-width:600px) {
+
+    .hero{
+        margin-bottom: 20px;
+    }
     .hero__title {
         font-size: 2rem;
     }
@@ -452,24 +480,28 @@ font-size: 20px;
         font-size: 1rem;
     }
 
-    .about__title{
+    .about__title {
         color: rgb(0, 63, 118);
         font-size: 20px;
     }
+
     .section-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .feature img {
         width: 80px;
         /* Ajusta el tamaño del logo según tus necesidades */
-        
+
     }
 }
 
 @media (max-width:600px) {
 
-.section-overlay{  padding: 20px; }
+    .section-overlay {
+        padding: 20px;
+    }
 
-  }
+}
