@@ -22,18 +22,13 @@ h6 {
 
 body {
     font-family: Sansation_Regular;
-
     margin: 0;
     background-color: rgb(255, 255, 255);
-
-}
-
-.container {
-    width: 90%;
-    max-width: 1800px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
+    background-image: url('../images/Landing_Web_aitue-2_trama.png');
+    background-repeat: repeat;
+    /* Puedes ajustar esto según tus necesidades */
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Estilos del botón de WhatsApp */
@@ -119,9 +114,9 @@ body {
     background-image: linear-gradient(180deg,
             rgba(7, 7, 7, 0) 0%,
             /* Color azul más oscuro */
-            rgba(1, 56, 118, 1) 100%
+            rgb(3, 41, 90) 100%
             /* Color azul transparente */
-        ), url('../images/header.jpg');
+        ), url('../images/mapachico\ \(2\).jpg');
     background-size: cover;
 
     z-index: -1;
@@ -209,7 +204,7 @@ nav.nav .nav__logo {
     display: grid;
     grid-auto-rows: max-content;
     align-content: center;
-
+    margin-left: 100px;
     padding-bottom: 150px;
     text-align: initial;
 }
@@ -230,27 +225,25 @@ nav.nav .nav__logo {
 
 .about {
     text-align: center;
-    margin-top: -130px;
+    margin-top: -100px;
     margin-bottom: 100px;
 }
 
-#soluciones {
-    background: url('../images/Landing_Web_aitue-2_trama.png') repeat; /* Reemplaza 'ruta/de/la/trama.jpg' con la ruta correcta de tu imagen de trama */
-     background-attachment: fixed;
-    background-size: cover;
-    padding: 60px 0; /* Ajusta el espaciado según sea necesario */
-}
+
 
 
 .subtitle {
     color: rgb(0, 63, 118);
-
+    padding: 0px 10px 0 10px;
     margin-bottom: -27px;
 }
 
 
 .about__paragraph {
     line-height: 1.7;
+    color: rgb(0, 63, 118);
+    font-size: 23px;
+    padding: 10px 30px 0px 30px;
 }
 
 .about__main {
@@ -281,32 +274,116 @@ nav.nav .nav__logo {
     color: rgb(0, 63, 118);
 }
 
+/*seccion con texto*/
+
+.contenedor {
+    position: relative;
+    height: 400px;
+    /* Ajusta la altura del contenedor según tus necesidades */
+    overflow: hidden;
+
+}
+
+.mi-imagen {
+    width: 100%;
+    height: 100%;
+    /* Ajusta la altura al 100% para llenar el contenedor verticalmente */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir completamente el contenedor */
+    display: block;
+    
+}
+
+.texto-izquierdo {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+.mi-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    /* Grosor del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+    transition: transform 0.3s ease-in-out;
+    /* Transición en el efecto hover */
+}
+
+
+/*comentarios*/
+
+
+ .h2comentario{
+    padding: 35px;
+ }
+.comentarios-seccion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    /* Ajusta el margen superior según tus necesidades */
+    padding: 30px;
+}
+
+.comentario {
+    width: 30%;
+    /* Ajusta el ancho de cada comentario según tus necesidades */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Asegura que el borde no afecte el ancho total */
+}
+
+.comentario:not(:last-child) {
+    border-right: 3px solid #1f1f1f;
+    /* Línea vertical que separa los comentarios */
+
+}
+
+.comentario:last-child {
+    border-right: none;
+    /* Elimina la línea en el último comentario */
+}
+
+
+.comentario h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.comentario p {
+    font-size: 16px;
+}
+
 
 
 
 /* seccion de beneficios*/
+
+
 
 .section {
     position: relative;
     height: 500px;
     /* Puedes ajustar la altura según tus necesidades */
     overflow: hidden;
-    margin-top: -120px;
-    
-
-
+    margin-top: 120px
 }
 
 .section-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background: linear-gradient(180deg,
-            rgba(1, 56, 118, 1) 100%,
-            /* Color azul más oscuro */
-            rgba(1, 56, 118, 0) 0%
-            /* Color azul transparente */
-        );
+    /* Ajusta la imagen para cubrir completamente el contenedor */
+    display: block;
+    background-image: url('../images/WhatsApp\ Image\ 2023-11-29\ at\ 10.41.08.jpeg');
 }
 
 .section-overlay {
@@ -345,7 +422,7 @@ nav.nav .nav__logo {
 
 .resaltado {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.em;
     /* Puedes ajustar el tamaño según tus preferencias */
     /* Puedes ajustar el color según tus preferencias */
 }
@@ -405,7 +482,7 @@ nav.nav .nav__logo {
         font-size: 20px;
     }
 
-    
+
 
     .about__main {
         gap: 2em;
@@ -423,15 +500,13 @@ nav.nav .nav__logo {
     .section-overlay {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: 1fr;
-        max-width: 250px;
+        max-width: 180px;
     }
 }
 
 @media (max-width:600px) {
 
-    .hero{
-        margin-bottom: 20px;
-    }
+
     .hero__title {
         font-size: 2rem;
     }
@@ -447,15 +522,23 @@ nav.nav .nav__logo {
         position: absolute;
         top: 0;
         left: 0;
+        background-image: linear-gradient(180deg,
+                rgba(7, 7, 7, 0) 0%,
+                /* Color azul más oscuro */
+                rgb(0, 45, 103) 100%
+                /* Color azul transparente */
+            ), url('../images/mapachico\ \(2\).jpg');
 
+
+        /*background-image: linear-gradient(180deg,
+                rgba(1, 56, 118, 0) 0%,
+               
+                rgba(1, 56, 118, 1) 100%
+                
+            ), url('../images/header.jpg');*/
         width: 100%;
         height: 80%;
-        background-image: linear-gradient(180deg,
-                rgba(1, 56, 118, 0) 0%,
-                /* Color azul más oscuro */
-                rgba(1, 56, 118, 1) 100%
-                /* Color azul transparente */
-            ), url('../images/satelite.jpg');
+
         background-position: center center;
         /* Centra la imagen en dispositivos móviles */
         background-size: cover;
@@ -464,14 +547,16 @@ nav.nav .nav__logo {
     }
 
 
+
+
     .hero__container {
         max-width: 1200px;
         --padding-container: 0;
         display: grid;
         grid-auto-rows: max-content;
         align-content: center;
-
-        padding-bottom: 200px;
+        margin: 0px;
+        padding-bottom: 100px;
         text-align: center;
     }
 
@@ -482,13 +567,20 @@ nav.nav .nav__logo {
 
     .about__title {
         color: rgb(0, 63, 118);
-        font-size: 20px;
+        font-size: 13px;
+    }
+
+    .about__icon {
+        width: 80px;
     }
 
     .section-image {
-        width: 100%;
-        height: 100%;
+        width: 500px;
+        height: 120%;
         object-fit: cover;
+        background-image: url('../images/WhatsApp\ Image\ 2023-11-29\ at\ 10.41.08.jpeg');
+
+        background-repeat: no-repeat;
     }
 
     .feature img {
@@ -496,12 +588,63 @@ nav.nav .nav__logo {
         /* Ajusta el tamaño del logo según tus necesidades */
 
     }
+
+    .about__paragraph {
+        line-height: 1.7;
+        color: rgb(0, 63, 118);
+        font-size: 17px;
+        padding: 20px 30px 0px 30px;
+    }
+
+    /*seccion comentarios de clientes*/
+
+    .comentarios-seccion {
+        flex-direction: column;
+        /* Cambia a disposición de columna para comentarios en dispositivos móviles */
+        align-items: center;
+        /* Centra los comentarios en dispositivos móviles */
+    }
+
+    .comentario {
+        width: 100%;
+        /* Ajusta el ancho al 100% para ocupar toda la pantalla en dispositivos móviles */
+        border-right: none;
+        border-bottom: 2px solid #020202;
+        /* Sombra en la línea horizontal en dispositivos móviles */
+        margin-bottom: 20px;
+        /* Espaciado entre comentarios en dispositivos móviles */
+    }
+
+    .comentario:not(:last-child) {
+        border-right: none;
+        /* Línea vertical que separa los comentarios */
+    }
+
+
+
+
+    /*----------SI   QUIERO AGREGAR LA LINEA ABAJO DE TODO, DEBO BORRAR ESA CLASE------*/
+    .comentario:last-child {
+        border-bottom: none;
+        /* Elimina la última línea horizontal en dispositivos móviles */
+        margin-bottom: 0;
+        /* Elimina el espacio entre comentarios en dispositivos móviles */
+    }
+
+
+
 }
 
-@media (max-width:600px) {
+@media (max-width:425px) {
 
-    .section-overlay {
-        padding: 20px;
+    .section-image {
+        width: 500px;
+        height: 120%;
+        object-fit: cover;
+        background-image: url('../images/mapachico\ \(4\).jpg');
+
+        background-repeat: no-repeat;
     }
+
 
 }
