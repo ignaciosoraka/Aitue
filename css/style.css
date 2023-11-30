@@ -449,6 +449,189 @@ nav.nav .nav__logo {
     /* Puedes ajustar el color según tus preferencias */
 }
 
+
+
+/*---------FORMULARIO---------*/
+
+.formulario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.box-info {
+    color:#ffffff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:#3498db;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background:#2091F9;
+    text-align: center;
+    transition: .1s;
+    border-radius: 5px;
+}
+
+.links > a > i {
+    color:#000000;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+    
+}
+
+.input-box {
+    position:relative;
+   
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    border-radius: 10px;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #001A49;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#020202;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:#001A49;
+}
+
+form > button {
+    width: 105%;
+    padding: 10px;
+    outline: none;
+    background:#001A49;
+    color:#fffcfc;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 .footer {
@@ -787,6 +970,30 @@ nav.nav .nav__logo {
         margin-bottom: 0;
         /* Elimina el espacio entre comentarios en dispositivos móviles */
     }
+
+
+/*-------FORMULARIO-------*/
+.content {
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-left: -20px;
+}
+
+.box-info {
+    gap:15px;
+}
+
+.box-info > h1 {
+    font-size: 1.5rem;
+}
+
+form > button{
+    width: 110%;
+}
+
+
 
 
     /*--footer*/
