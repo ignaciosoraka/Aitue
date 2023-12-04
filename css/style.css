@@ -330,7 +330,7 @@ nav.nav .nav__logo {
 .mi-texto {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     transform: translate(0, -50%);
     color: #fff;
     font-size: 40px;
@@ -981,7 +981,7 @@ form>button:hover,
         position: absolute;
         top: 45%;
         text-align: center;
-        left: 10%;
+        padding-right: 15px;
         transform: translate(0, -50%);
         color: #fff;
         font-size: 30px;
@@ -1065,7 +1065,7 @@ form>button:hover,
     }
 
     .nav--footer {
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
 
     .nav__link--footer {
@@ -1092,7 +1092,13 @@ form>button:hover,
 
 
 
-
+    .whatsapp-button img {
+        width: 65px;
+        /* Tamaño del icono de WhatsApp */
+        height: 65px;
+    
+    
+    }
 
 }
 
