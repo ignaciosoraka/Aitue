@@ -24,9 +24,11 @@
 
     <header class="hero">
         <nav class="nav container">
-            <div class="nav__logo">
-                <img class="logo" src="./images//Logo AITUE (3) (1).png" alt="Logo">
-            </div>
+            <a href="index.html" class="logo-link">
+                <div class="nav__logo">
+                    <img class="logo" src="./images//Logo AITUE (3) (1).png" alt="Logo">
+                </div>
+            </a>
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
@@ -42,7 +44,7 @@
                     <a href="#preguntas" class="nav__links">Preguntas frecuentes</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#contacto" class="nav__links">Contacto</a>
+                    <a href="gracias.html" class="nav__links">Contacto</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close">
@@ -202,26 +204,35 @@
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <form>
+            <form action="correos.php" method="POST">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre y apellido" required>
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" required placeholder="Correo electrónico">
+                    <input type="email" name="email" required placeholder="Correo electrónico">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Asunto">
+                    <input type="text" name="asunto" placeholder="Asunto">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </div>
                 <div class="input-box">
-                    <textarea placeholder="Escribe tu mensaje..."></textarea>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..."></textarea>
+
                 </div>
                 <button type="submit">Enviar mensaje</button>
             </form>
         </div>
     </section>
+
+    <section id="prueba30dias" class="prueba-30dias container">
+        <h2 class="prueba-30dias__titulo">PRUEBA DE 30 DÍAS</h2>
+        <p class="prueba-30dias__mensaje">
+            Si no está conforme, devuelva el AITUE  para recibir un reembolso completo.
+        </p>
+    </section>
+
 
 
 
@@ -251,6 +262,7 @@
 
         </section>
 
+      
 
 
         <section class="footer__copy container">
@@ -259,7 +271,7 @@
                         class="footer__img"></a>
                 <a href="#" target="_blank" class="footer__icons"><img src="./images/twitter.svg"
                         class="footer__img"></a>
-                <a href="https://www.youtube.com/watch?v=SddKxuQhEnM" target="_blank" class="footer__icons"><img
+                <a href="" target="_blank" class="footer__icons"><img
                         src="./images/youtube.svg" class="footer__img"></a>
 
             </div>

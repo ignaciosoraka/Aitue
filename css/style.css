@@ -348,6 +348,7 @@ nav.nav .nav__logo {
 
 .h2comentario {
     padding: 35px;
+    padding-top: 100px;
 }
 
 .comentarios-seccion {
@@ -619,7 +620,7 @@ form>button {
 
 form>button:hover,
 .links>a:hover {
-    background: rgb(172, 16, 47);
+    background: rgb(35, 36, 114);
 }
 
 @keyframes shake {
@@ -647,7 +648,51 @@ form>button:hover,
 
 
 
+/*agradecimiento*/
+/* Agrega estos estilos al final de tu archivo CSS o en un archivo separado */
 
+.agradecimiento {
+    margin-top: -120px;
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.agradecimiento__contenido {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agradecimiento__titulo {
+    font-size: 2em;
+    color: #333;
+}
+
+.agradecimiento__mensaje {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+}
+
+/*texto prueba de 30 dias*/
+
+/* Estilos para la sección de prueba de 30 días */
+.prueba-30dias {
+   
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.prueba-30dias__titulo {
+    font-size: 2em;
+    color: #333;
+}
+
+.prueba-30dias__mensaje {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+}
 
 
 
@@ -757,6 +802,7 @@ form>button:hover,
     margin-top: 10px;
 }
 
+
 @media (max-width:1100px) {
 
     .section-overlay {
@@ -811,7 +857,10 @@ form>button:hover,
     .subtitle {
         font-size: 20px;
     }
-
+    .h2comentario {
+        padding: 35px;
+        padding-top: 30px;
+    }
 
 
     .about__main {
@@ -1004,6 +1053,7 @@ form>button:hover,
         /* Cambia a disposición de columna para comentarios en dispositivos móviles */
         align-items: center;
         /* Centra los comentarios en dispositivos móviles */
+        margin-bottom: -100px;
     }
 
     .comentario {
@@ -1088,6 +1138,18 @@ form>button:hover,
 
 
 
+    }
+
+    .loguito {
+
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente los elementos hijos */
+        align-items: center;
+        /* Centra verticalmente los elementos hijos */
+        margin-left: 0%;
+        height: 70px;
+        ;
     }
 
 
