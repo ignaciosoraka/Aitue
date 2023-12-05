@@ -38,13 +38,14 @@
                     <a href="#soluciones" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#cotizar" class="nav__links">Cotización</a>
+                    <a href="#comentarios" class="nav__links">Comentarios Clientes</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#preguntas" class="nav__links">Preguntas frecuentes</a>
+                    <a href="#beneficios" class="nav__links">Beneficios</a>
                 </li>
+                
                 <li class="nav__items">
-                    <a href="gracias.html" class="nav__links">Contacto</a>
+                    <a href="#formulario" class="nav__links">Contacto</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close">
@@ -135,36 +136,38 @@
     </section>
 
 
-    <section class="comentarios">
+    <section id="comentarios" class="comentarios">
         <h2 class="h2comentario">COMENTARIOS DE CLIENTES</h2>
         <div class="comentarios-seccion">
 
             <div class="comentario">
 
                 <h3>ESTABILIDAD Y VELOCIDAD DE CONEXIÓN</h3>
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque ullam pariatur corporis sequi culpa accusantium quas? Modi
-                    debitis non, deserunt sapiente earum eius quis obcaecati, in laborum aut suscipit
-                    perferendis."<br><br>-Alfredo, Mendoza Argenitna</p>
+                <p>"La estabilidad y velocidad de conexión que he experimentado  son realmente impresionantes. 
+                    La velocidad de descarga y carga es buenisima, permitiéndome disfrutar de una 
+                    experiencia de navegación sin interrupciones. Ha superado mis expectativas en 
+                    términos de estabilidad y velocidad de conexión."<br><br>-Fernanda, Villa Esperanza, Tucumán</p>
             </div>
             <div class="comentario">
                 <h3>ATENCIÓN AL CLIENTE </h3>
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque ullam pariatur corporis sequi culpa accusantium quas? Modi
-                    debitis non, deserunt sapiente earum eius quis obcaecati, in laborum aut suscipit
-                    perferendis."<br><br>-Alfredo, Mendoza Argenitna</p>
+                <p>"¡La atención fue excepcional! Estaba
+                     buscando una solución confiable de internet y quedé
+                      impresionado con el nivel de servicio que recibí. Desde la primera 
+                      consulta hasta la instalación, el equipo de atención al cliente 
+                      demostró un compromiso inigualable!."<br><br>-Alfredo, Sierras del Sur, Córdoba</p>
             </div>
             <div class="comentario">
                 <h3>PYME ARGENTINA</h3>
-                <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque ullam pariatur corporis sequi culpa accusantium quas? Modi
-                    debitis non, deserunt sapiente earum eius quis obcaecati, in laborum aut suscipit
-                    perferendis."<br><br>-Alfredo, Mendoza Argenitna</p>
+                <p> "Valoro profundamente el apoyo a las empresas argentinas. 
+                    La decisión de elegirlos no solo se basó en la calidad de sus
+                     servicios, sino también en el respaldo a una empresa local, 
+                     una que refleja el espíritu emprendedor y la dedicación que caracteriza a 
+                     las Pymes de nuestro país."<br><br>-Alejandro, Río Tranquilo, Río Negro</p>
             </div>
         </div>
     </section>
 
-    <section class="heri">
+    <section id="beneficios" class="heri">
         <div class="section">
             <div class="section-image" alt="Imagen de fondo"></div>
             <div class="section-overlay">
@@ -188,7 +191,7 @@
         </div>
     </section>
 
-    <section class="formulario">
+    <section id="formulario" class="formulario">
         <div class="content">
             <div class="box-info">
                 <h1>CONTÁCTATE CON NOSOTROS</h1>
@@ -198,10 +201,10 @@
                     <p><i class="fa-solid fa-location-dot"></i> Santa fe capital CP 3000. Argentina</p>
                 </div>
                 <div class="links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/aitue.net"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/aituecomunica/"><i class="fa-brands fa-instagram"></i></a>
+                    
+                    <a href="https://www.linkedin.com/company/aitue/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBlgDSkG7SFqn1Zf1oLqvPg%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <form action="correos.php" method="POST">
@@ -259,8 +262,18 @@
 
 
 
-
-
+   
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 
     <script src="./js/menu.js"></script>
