@@ -155,6 +155,9 @@ body {
 }
 
 
+
+
+
 /* Nav */
 .logo {
     height: 5.5rem;
@@ -268,7 +271,7 @@ nav.nav .nav__logo {
 .subtitle {
     color: rgb(0, 63, 118);
     padding: 0px 10px 0 10px;
-    margin-bottom: -27px;
+    margin-bottom: 0px;
 }
 
 
@@ -280,7 +283,7 @@ nav.nav .nav__logo {
 }
 
 .about__main {
-    padding-top: 80px;
+    padding-top: 10px;
     display: grid;
     width: 90%;
     margin: 0 auto;
@@ -988,7 +991,9 @@ footer {
         padding-top: 30px;
     }
 
-
+.about{
+    margin-top: 55px;
+}
     .about__main {
         gap: 2em;
     }
@@ -1076,7 +1081,7 @@ footer {
                 
             ), url('../images/header.jpg');*/
         width: 100%;
-        height: 80%;
+        height: 100vh;
 
         background-position: center center;
         /* Centra la imagen en dispositivos móviles */
