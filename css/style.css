@@ -270,7 +270,7 @@ nav.nav .nav__logo {
 
 .subtitle {
     color: rgb(0, 63, 118);
-    padding: 0px 10px 0 10px;
+    padding: 10px 10px 0 10px;
     margin-bottom: 0px;
 }
 
@@ -287,7 +287,7 @@ nav.nav .nav__logo {
     display: grid;
     width: 90%;
     margin: 0 auto;
-    gap: 1em;
+    gap: 0.5em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
@@ -335,6 +335,45 @@ nav.nav .nav__logo {
 
 }
 
+.botones {
+    margin-top: 20px;
+    /* Espacio entre el texto y los botones */
+}
+
+.btn-residencial,
+.btn-corporativo {
+    padding: 10px 20px;
+    
+    background-color: #007BFF;
+    /* Color de fondo del botón */
+    color: #fff;
+    font-weight: bold;
+    /* Color del texto del botón */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-corporativo {
+    background-color: #00b3ff;
+    /* Puedes cambiar el color según tus preferencias */
+}
+
+/* Estilo al pasar el mouse */
+.btn-residencial:hover,
+.btn-corporativo:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
 .mi-imagen {
     width: 100%;
     height: 100%;
@@ -359,7 +398,7 @@ nav.nav .nav__logo {
 .mi-texto {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 15%;
     transform: translate(0, -50%);
     color: #fff;
     font-size: 40px;
@@ -372,10 +411,259 @@ nav.nav .nav__logo {
 }
 
 
+
+/*---- foto Alejandro ---*/
+
+
+.custom-section {
+    overflow: hidden;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.custom-container {
+    display: flex;
+    max-width: 1140px;
+    /* O el ancho deseado para que coincida con el container de tu diseño */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.custom-image {
+    max-width: 90%;
+    width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
+    display: block; /* Hace que la imagen sea un bloque para que se pueda centrar */
+    margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
+    border-radius: 20px;
+}
+
+.custom-heading h5 {
+    font-weight: bold;
+    font-size: 28px;
+
+    color: #232323;
+
+}
+
+.custom-text p {
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+.custom-button {
+    margin-top: 20px;
+}
+
+
+a.main-button {
+    font-size: 13px;
+    border-radius: 12px;
+    padding: 12px 20px;
+    background-color: #4162f7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.25px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+a.main-button:hover {
+    background-color: #007BFF;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    .custom-content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .custom-container {
+        flex-direction: column;
+        /* Cambia la dirección a columna en dispositivos móviles */
+        align-items: center;
+        /* Centra los elementos en el eje transversal */
+    }
+
+    .custom-image {
+        order: 1;
+        /* Cambia el orden de la imagen a 1 (primero) en dispositivos móviles */
+    }
+
+    .custom-heading,
+    .custom-text,
+    .custom-button {
+        width: 100%;
+        /* Asegura que estos elementos ocupen el ancho completo en dispositivos móviles */
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+
+
+
+    .mobile-top-fix {
+        margin-top: 30px;
+        margin-bottom: 0px;
+
+    }
+
+
+    .section {
+
+        position: relative;
+        height: auto;
+        /* Puedes ajustar la altura según tus necesidades */
+        overflow: hidden;
+        margin-top: 120px;
+        margin-bottom: 20px;
+
+
+    }
+
+}
+
+
+
+/*comentarios2.0*/
+
+/* Testimony */
+
+.testimony {
+    background-color: rgb(0, 63, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+.testimony__container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.testimony__body {
+    padding: 20px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.subtitle2{
+    color: rgb(0, 0, 0);
+}
+.subtitle3{
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.testimony__review{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    
+}
+
+.testimony__body--show {
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony__texts {
+    max-width: 700px;
+}
+
+.testimony__course {
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony__arrow {
+    width: 90%;
+    cursor: pointer;
+}
+
+.testimony__rating {
+    color: #FFD700;
+    /* Color amarillo para las estrellas (puedes ajustar el color) */
+    font-size: 24px;
+    /* Tamaño de las estrellas (ajusta según sea necesario) */
+}
+
+.star {
+    display: inline-block;
+}
+
+.gmail-logo {
+    margin-top: 10px;
+    /* Ajusta la distancia desde el texto según sea necesario */
+}
+
+.gmail-logo img {
+    width: 40px;
+    /* Ajusta el tamaño del logotipo según sea necesario */
+}
+
+
+@media (max-width:800px) {
+    .testimony__container {
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .testimony__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items: center;
+    }
+
+
+    .testimony__img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+
 /*comentarios*/
 
 
 .h2comentario {
+
     padding: 35px;
     padding-top: 100px;
 }
@@ -420,17 +708,20 @@ nav.nav .nav__logo {
 
 
 
+
+
+
 /* seccion de beneficios*/
 
 
 
 .section {
     position: relative;
-    height: 500px;
+    height: 700px;
     /* Puedes ajustar la altura según tus necesidades */
     overflow: hidden;
     margin-top: 120px;
-    margin-bottom: 120px;
+
 }
 
 .section-image {
@@ -501,6 +792,7 @@ nav.nav .nav__logo {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    margin-top: 120px;
 }
 
 .content {
@@ -711,7 +1003,7 @@ form>button:hover,
 /* Estilos para la sección de prueba de 30 días */
 .prueba-30dias {
 
-    padding: 40px 20px;
+    padding: 120px 20px;
     text-align: center;
 }
 
@@ -991,9 +1283,10 @@ footer {
         padding-top: 30px;
     }
 
-.about{
-    margin-top: 55px;
-}
+    .about {
+        margin-top: 55px;
+    }
+
     .about__main {
         gap: 2em;
     }
@@ -1100,7 +1393,7 @@ footer {
         grid-auto-rows: max-content;
         align-content: center;
         margin: 0px;
-        padding-bottom: 100px;
+        padding-bottom: 25px;
         text-align: center;
     }
 
