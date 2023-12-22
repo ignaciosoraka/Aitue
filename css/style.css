@@ -24,7 +24,12 @@ body {
     font-family: Sansation_Regular;
     margin: 0;
     background-color: rgb(255, 255, 255);
-    background-image: url('../images/Landing_Web_aitue_trama\ \(1\).png');
+    background-image: url('../images/Landing_Web_aitue-2_trama.png');
+    background-repeat: repeat;
+    /* Puedes ajustar esto según tus necesidades */
+    background-size: cover;
+    background-attachment: fixed;
+    image-rendering: pixelated; /* Otra opción es "crisp-edges" */
 }
 
 
@@ -33,10 +38,10 @@ body {
 @media only screen and (max-width: 767px) {
     body {
         background-color: rgb(255, 255, 255);
-   ;
+        background-image: url('../images/Trama_mobile_landing-\ \(1\).png');
     background-repeat: repeat;
     /* Puedes ajustar esto según tus necesidades */
-    background-size: cover;
+    background-size:contain;
     background-attachment: fixed;
     image-rendering: pixelated; /* Otra opción es "crisp-edges" */
     }
@@ -275,7 +280,6 @@ nav.nav .nav__logo {
     text-align: center;
     margin-top: -100px;
     margin-bottom: 100px;
-  
 }
 
 
