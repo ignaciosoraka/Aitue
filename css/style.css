@@ -23,29 +23,26 @@ h6 {
 body {
     font-family: Sansation_Regular;
     margin: 0;
-    background-color: rgb(255, 255, 255);
-    background-image: url('../images/Landing_Web_aitue-2_trama.png');
-    background-repeat: repeat;
-    /* Puedes ajustar esto según tus necesidades */
+   
+}
+body::before {
+    content: "";
+    background-image: url(../images/Landing_Web_aitue_trama\ \(1\).png);
     background-size: cover;
-    background-attachment: fixed;
-    image-rendering: pixelated; /* Otra opción es "crisp-edges" */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* Ajusta el valor para controlar la cantidad de desenfoque */
+    z-index: -1;
 }
 
 
 
 
-@media only screen and (max-width: 767px) {
-    body {
-        background-color: rgb(255, 255, 255);
-        background-image: url('../images/Trama_mobile_landing-\ \(1\).png');
-    background-repeat: repeat;
-    /* Puedes ajustar esto según tus necesidades */
-    background-size:contain;
-    background-attachment: fixed;
-    image-rendering: pixelated; /* Otra opción es "crisp-edges" */
-    }
-}
+
 
 
 /* Estilos del botón de WhatsApp */
