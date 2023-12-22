@@ -23,9 +23,8 @@ h6 {
 body {
     font-family: Sansation_Regular;
     margin: 0;
-
+   
 }
-
 body::before {
     content: "";
     background-image: url(../images/Landing_Web_aitue_trama\ \(1\).png);
@@ -35,7 +34,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-
+    
     /* Ajusta el valor para controlar la cantidad de desenfoque */
     z-index: -1;
 }
@@ -163,7 +162,7 @@ body::before {
             /* Color azul más oscuro */
             rgb(3, 41, 90) 100%
             /* Color azul transparente */
-        ), url('../images/mapachico\ \(2\).jpg');
+        ), url('../images/mapachico\ \(3\).jpg');
     background-size: cover;
 
     z-index: -1;
@@ -323,7 +322,7 @@ nav.nav .nav__logo {
 
 .about__title {
     color: rgb(0, 63, 118);
-
+   
 }
 
 /*seccion con texto*/
@@ -358,7 +357,7 @@ nav.nav .nav__logo {
 .btn-residencial,
 .btn-corporativo {
     padding: 10px 20px;
-
+    
     background-color: #007BFF;
     /* Color de fondo del botón */
     color: #fff;
@@ -379,8 +378,7 @@ nav.nav .nav__logo {
 /* Estilo al pasar el mouse */
 .btn-residencial:hover,
 .btn-corporativo:hover {
-    background-color: #0056b3;
-    /* Cambia el color al pasar el mouse */
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
 }
 
 
@@ -452,12 +450,9 @@ nav.nav .nav__logo {
 
 .custom-image {
     max-width: 90%;
-    width: 100%;
-    /* Para asegurarse de que la imagen no exceda su contenedor */
-    display: block;
-    /* Hace que la imagen sea un bloque para que se pueda centrar */
-    margin: 0 auto;
-    /* Establece márgenes automáticos para centrar horizontalmente */
+    width: 100%; /* Para asegurarse de que la imagen no exceda su contenedor */
+    display: block; /* Hace que la imagen sea un bloque para que se pueda centrar */
+    margin: 0 auto; /* Establece márgenes automáticos para centrar horizontalmente */
     border-radius: 20px;
 }
 
@@ -568,11 +563,9 @@ a.main-button:hover {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
@@ -580,14 +573,14 @@ a.main-button:hover {
 
 .testimony {
     animation: gradient-e60a44dc 15s ease-in-out infinite;
-    background: linear-gradient(-45deg, #4590c9, #166b95, #151f38, #166b95);
+    background: linear-gradient(-45deg,#4590c9,#166b95,#151f38,#166b95);
     background-size: 400% 400%;
-
+    
     height: 100%;
     min-height: 370px;
     overflow: hidden;
     padding: 20px;
-
+   
     margin-top: 80px;
 }
 
@@ -612,20 +605,19 @@ a.main-button:hover {
     pointer-events: none;
 }
 
-.subtitle2 {
+.subtitle2{
     color: rgb(255, 250, 250);
     font-size: 35px;
 }
-
-.subtitle3 {
+.subtitle3{
     padding-top: 20px;
     color: rgb(255, 255, 255);
 }
 
-.testimony__review {
+.testimony__review{
     color: rgb(255, 255, 255);
-
-
+   
+    
 }
 
 .testimony__body--show {
@@ -656,7 +648,7 @@ a.main-button:hover {
 .testimony__arrow {
     width: 90%;
     cursor: pointer;
-
+   
 
 }
 
@@ -836,7 +828,7 @@ a.main-button:hover {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
+   
 }
 
 .content {
@@ -1045,114 +1037,6 @@ form>button:hover,
 /*texto prueba de 30 dias*/
 
 /* Estilos para la sección de prueba de 30 días */
-
-
-
-.prueba-30dias__titulo.animacion {
-    opacity: 1;
-    transform: translateY(0);
-}
-.prueba-30dias__titulo span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(1em);
-    animation: fadeInUp 0.5s ease-in-out forwards;
-}
-
-.prueba-30dias__titulo span:nth-child(1) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.1s;
-}
-
-.prueba-30dias__titulo span:nth-child(2) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.2s;
-}
-.prueba-30dias__titulo span:nth-child(3) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.3s;
-}
-.prueba-30dias__titulo span:nth-child(4) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.4s;
-}
-.prueba-30dias__titulo span:nth-child(5) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.5s;
-}
-.prueba-30dias__titulo span:nth-child(6) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.6s;
-}
-.prueba-30dias__titulo span:nth-child(7) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.7s;
-}
-.prueba-30dias__titulo span:nth-child(8) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.8s;
-}
-.prueba-30dias__titulo span:nth-child(9) {
-    animation: fadeInUp 0.5s ease-in-out forwards 0.9s;
-}
-.prueba-30dias__titulo span:nth-child(10) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1s;
-}
-.prueba-30dias__titulo span:nth-child(11) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.1s;
-}
-.prueba-30dias__titulo span:nth-child(12) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.2s;
-}
-.prueba-30dias__titulo span:nth-child(13) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.3s;
-}
-.prueba-30dias__titulo span:nth-child(14) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.4s;
-}
-.prueba-30dias__titulo span:nth-child(15) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.5s;
-}
-.prueba-30dias__titulo span:nth-child(16) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.6s;
-}
-.prueba-30dias__titulo span:nth-child(17) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.7s;
-}
-.prueba-30dias__titulo span:nth-child(18) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.8s;
-}
-.prueba-30dias__titulo span:nth-child(19) {
-    animation: fadeInUp 0.5s ease-in-out forwards 1.9s;
-}
-.prueba-30dias__titulo span:nth-child(20) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2s;
-}
-.prueba-30dias__titulo span:nth-child(21) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.1s;
-}
-.prueba-30dias__titulo span:nth-child(22) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.2s;
-}
-.prueba-30dias__titulo span:nth-child(23) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.3s;
-}
-.prueba-30dias__titulo span:nth-child(24) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.4s;
-}
-.prueba-30dias__titulo span:nth-child(25) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.5s;
-}
-.prueba-30dias__titulo span:nth-child(26) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.6s;
-}
-.prueba-30dias__titulo span:nth-child(27) {
-    animation: fadeInUp 0.5s ease-in-out forwards 2.7s;
-}
-
-
-/* Agrega la animación para el resto de las letras aquí */
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 
 
 
