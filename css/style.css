@@ -463,6 +463,14 @@ nav.nav .nav__logo {
     color: #232323;
 
 }
+.custom-heading2 h5 {
+    font-weight: bold;
+    font-size: 28px;
+   display: none;
+
+    color: #232323;
+
+}
 
 .custom-text p {
     margin-bottom: 75px;
@@ -473,6 +481,10 @@ nav.nav .nav__logo {
     margin-top: 20px;
 }
 
+.custom-text-container {
+    order: 3; /* Asegura que el contenedor de texto venga después de la imagen en dispositivos móviles */
+    width: 100%;
+}
 
 a.main-button {
     font-size: 13px;
@@ -498,7 +510,8 @@ a.main-button:hover {
 
     .custom-content {
         flex: 1;
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
+        
     }
 
     .custom-container {
@@ -507,12 +520,24 @@ a.main-button:hover {
         align-items: center;
         /* Centra los elementos en el eje transversal */
     }
-
-    .custom-image {
-        order: 1;
-        /* Cambia el orden de la imagen a 1 (primero) en dispositivos móviles */
+    .custom-heading {
+        order: 1; /* Mueve el h5 primero en dispositivos móviles */
+        text-align: center; /* Centra el texto */
+        display: none;
+    }
+    .custom-heading2 h5 {
+        display: block;
+        /* Mueve el h5 primero en dispositivos móviles */
+        text-align: center; /* Centra el texto */
     }
 
+    .custom-image {
+        order: 2; /* Mueve la imagen después del h5 en dispositivos móviles */
+        margin-top: 20px; /* Añade un margen superior para separar la imagen del texto en móviles */
+    }
+.custom-text{
+    margin-top: -40px;
+}
     .custom-heading,
     .custom-text,
     .custom-button {
@@ -772,6 +797,7 @@ a.main-button:hover {
     /* Centra la imagen */
     background-repeat: no-repeat;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
 }
 
 .section-overlay {
@@ -1052,6 +1078,7 @@ form>button:hover,
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     /* Agrega sombra al título */
+    margin-bottom: 20px;
 }
 
 .prueba-30dias__mensaje {
