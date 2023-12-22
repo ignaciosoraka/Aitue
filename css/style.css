@@ -581,7 +581,7 @@ a.main-button:hover {
     overflow: hidden;
     padding: 20px;
    
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .testimony__container {
@@ -589,7 +589,7 @@ a.main-button:hover {
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .testimony__body {
@@ -607,6 +607,7 @@ a.main-button:hover {
 
 .subtitle2{
     color: rgb(255, 250, 250);
+    font-size: 35px;
 }
 .subtitle3{
     padding-top: 20px;
@@ -615,7 +616,7 @@ a.main-button:hover {
 
 .testimony__review{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+   
     
 }
 
@@ -647,6 +648,8 @@ a.main-button:hover {
 .testimony__arrow {
     width: 90%;
     cursor: pointer;
+   
+
 }
 
 .testimony__rating {
