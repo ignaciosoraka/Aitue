@@ -1024,7 +1024,7 @@ form>button:hover,
 .prueba-30dias__titulo {
     font-size: 2em;
     color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     /* Agrega sombra al título */
 }
 
