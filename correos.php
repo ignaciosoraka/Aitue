@@ -3,14 +3,14 @@ $destinatario = 'ignaciosoraka@gmail.com';
 
 $nombre = $_POST['nombre'];
 $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$asunto = $_POST['asunto'];
+$ciudad = $_POST['ciudad'];
 $mensaje = $_POST['mensaje'];
 
 
 $mensajeCompleto = "Mensaje de contacto:\n\n";
 $mensajeCompleto .= "Nombre: " . $nombre . "\n";
 $mensajeCompleto .= "Correo Electrónico: " . $email . "\n";
-$mensajeCompleto .= "Asunto: " . $asunto . "\n";
+$mensajeCompleto .= "Ciudad: " . $ciudad . "\n";
 $mensajeCompleto .= "Mensaje: " . $mensaje . "\n";
 
 
